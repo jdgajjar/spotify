@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", serif;
+}
+::-webkit-scrollbar {
+    width: 10px; 
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #333; 
+    border-radius: 10px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #222; 
+    border-radius: 10px; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; 
+  }
+  
+  .close{
+    display: none;
+  }
+
+.home ul li{
+    display: flex;
+    gap: 15px;
+    width: 14px;
+    list-style: none;
+    padding-top: 14px;
+    font-weight: bold;
+}
+
+.footer a{
+    color: gray;
+    gap: 13px;
+}
+
+
+
+.header .btn{
+    padding: 20px;
+}
+
+
+.card > *{
+    padding-top: 10px;
+    transition: all 1s ease-out;
+}
+
+.song_list ul li{
+  list-style-type: decimal;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  cursor: pointer;
+  padding: 12px 0px;
+  border: 1px solid white;
+  margin: 12px;
+  padding: 12px;
+  border-radius: 5px;
+  height: 60px;
+}
+
+.info{
+  font-size: 13px;
+  width: 344px;
+}
+
+.info div{
+  word-break: break-all;
+}
+
+.song_buttons img{
+  cursor: pointer;
+}
+
+.hamburger{
+  display: none;
+}
+
+
+@media (max-width: 1400px) {
+  .left{
+    background-color: black;
+    position: absolute;
+    left: -110%;
+    transition: all ease .5s;
+    z-index: 22;
+    width: 300px;
+   
+  }
+  .close{
+    display: block;
+  }
+  .rigth{
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .playbar{
+    width: 95vw;
+    right: 2.5vw;
+    justify-self: center;
+    align-self: center;
+  }
+  .hamburger{
+    display: block;
+  }
+
+  .song_list ul{
+    padding: 0 1%;
+    overflow-x: hidden;
+  }
+  .songinfo{
+    width: 100px;
+  }
+  .song_buttons{
+    margin-right: 0;
+  }
+ 
+}
+@media (max-width: 600px) {
+  .backward_icon{
+    display: none;
+  }
+  .forward_icon{
+    display: none;
+  }
+  .card-container{
+    justify-content: center;
+    flex-direction: row;
+  }
+  .abovbar{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .song_buttons{
+    width: 30px;
+  }
+  .songTime{
+    font-size: small;
+  }
+  .songinfo{
+    font-size: medium;
+    margin-bottom: 2px;
+    width: fit-content;
+  }
+  .song_buttons{
+    margin-right: 0;
+  }
+  .rigth{
+    margin-top: 0;
+    border-top-left-radius: 0px ;
+    
+  }
+
+
+
+}
+
+@media (max-width: 350px) {
+  
+  .header .btn{
+    padding: 2px;
+  }
+}

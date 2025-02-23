@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="./img/logo.png">
+    <link rel="stylesheet" href="scr/output.css">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body class="bg-black text-white overflow-hidden">
+    <div class="contenior flex bg-black text-white ">
+        <div class="left w-[25vw] p-2.5 ">
+            <div class="home bg-[#121212] rounded-[7px] m-[5px] p-2.5">
+                <div class="logo flex justify-between">
+                    <img class="invert w-[110px]" src="./img/logo.svg" alt="logo">
+                    <img class="close object-contain  invert" src="./img/close.svg" alt="">
+                </div>
+                <ul>
+                    <li>
+
+                        <img class="invert " src="./img/home.svg" alt="home">Home
+                    </li>
+                    <li>
+                        <img class="invert" src="./img/search.svg" alt="search">Search
+                    </li>
+                </ul>
+            </div>
+            <div class="library relative  bg-[#121212] rounded-[7px] m-[5px] p-[10px] min-h-[85vh]">
+                <div class="Library-heading flex gap-[15px] w-full  font-[14px] items-center px-[23px] py-[14px] ">
+                    <img class="invert w-[30px]" src="./img/playlist.svg" alt="Library">
+                    <h2>
+                        Your Library
+                    </h2>
+                </div>
+                <div class="song_list h-[444px] overflow-auto mb-11">
+
+                    <ul class="px-10 ">
+
+                    </ul>
+                </div>
+                <div
+                    class="footer flex absolute text-[10px] text-gray-500 text-nowrap gap-3  bottom-1 py-[10px] flex-wrap ">
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/">
+                            <span>Legal</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/">
+                            <span>Safety &amp; Privacy Center</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+                            <span>Privacy Policy</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+                            <span>Cookies</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+                            <span>About Ads</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/">
+                            <span>Accessibility</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="rigth  bg-[#121212] rounded-[7px] my-4  w-[75vw] overflow-auto  relative">
+            <div class="header bg-[rgb(34,34,34)] flex justify-between items-center">
+                <div class="nav flex size-7 items-center gap-5">
+                    <img class="hamburger object-contain  ml-5 invert" src="./img/hamburger.svg" alt="">
+                    <img class="object-contain backward_icon" src="./img/backward_icon.png" alt="backward_icon">
+                    <img class="object-contain forward_icon" src="./img/forward_icon.png" alt="forward_icon">
+                </div>
+                <div class="btn flex gap-10 justify-evenly">
+                    <button
+                        class="SingIn_btn font-bold cursor-pointer text-sm opacity-25 transition-all duration-100 ease-in hover:opacity-80">Sing
+                        In</button>
+                    <button
+                        class="Login_btn group bg-[#d3d2d2] text-black rounded-[20px] font-bold px-4 py-2 transition-all duration-300 ease-in hover:font-black hover:px-5">
+                        Login
+                    </button>
+                </div>
+
+            </div>
+            <div class="spotify-playlist">
+                <h1 class="text-4xl p-4">Spotify Playlist</h1>
+                <div class="card-container pb-[25vh] flex justify-start gap-[10px] flex-wrap m-[30px] ">
+                
+
+                </div>
+
+                <div
+                    class="playbar fixed rounded-[10px] right-[50px] bottom-8 invert bg-[#dad5d5]  w-[70vw] p-[12px] justify-center">
+                    <div
+                        class="seekbar cursor-pointer h-[4px] w-[98%]   bg-red-500 absolute bottom-0 left-0 m-[6px] rounded-[10px]">
+                        <div
+                            class="circle w-[13px] h-[13px] bg-black rounded-[13px] relative bottom-[4px] left-[0%] transition-[left] duration-500 ease-linear">
+
+                        </div>
+                    </div>
+                    <div class="abovbar flex  justify-between w-[98%]">
+
+                        <div class="songinfo w-[200px] text-black px-3 text-nowrap overflow-hidden">
+
+                        </div>
+
+                        <div class="song_buttons flex justify-center items-center gap-3 mb-2 mr-[115px]">
+                            <img id="previous" class="w-[35px]" src="./img/prevsong.svg" alt="prevsong">
+                            <img id="play" class="w-[35px]" src="./img/play.svg" alt="play">
+                            <img id="next" class="w-[35px]" src="./img/nextsong.svg" alt="nextsong">
+                        </div>
+                        <div class="time_valume flex flex-col-reverse justify-center items-center mb-2 ">
+
+
+                            <div class="songTime text-black px-3">
+
+                            </div>
+                            <div class="volume flex gap-3 justify-center items-center ">
+                                <img class="volume_icon w-6" src="./img/volume.svg" alt="volume">
+                                <div class="range">
+                                    <input class="cursor-pointer" type="range" name="volume" id="volume">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
