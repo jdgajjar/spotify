@@ -139,9 +139,9 @@
     flex-direction: row;
   }
   .abovbar{
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
   .song_buttons{
     width: 30px;
@@ -150,8 +150,9 @@
     font-size: small;
   }
   .songinfo{
+   
     font-size: medium;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
     width: fit-content;
   }
   .song_buttons{
@@ -161,6 +162,10 @@
     margin-top: 0;
     border-top-left-radius: 0px ;
     
+  }
+
+  .volume{
+    display: none;
   }
 
 
